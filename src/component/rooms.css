@@ -1,0 +1,114 @@
+.images{
+    display: flex;
+    width: 100;
+
+}
+.topPart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.one{
+    margin-right:50px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.fam img{
+    width: 25vw;
+    height: 25vh;
+    margin-left: 10px;
+    margin-top: 250px;
+    
+    
+}
+.Pres img{
+    width: 25vw;
+    height: 25vh;
+    margin-left: 30px;
+    margin-top: 250px;
+
+}
+.sing img{
+    width: 25vw;
+    height: 25vh;
+    margin-left: 30px;
+    margin-top: 250px;
+    margin-right: 10px;
+} 
+.footer{
+    margin-top: 60px;
+    background-color: #f2f2f2;
+    height:260px;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+}
+.twitter-part{
+display: flex;
+padding-top: 40px;
+padding-right: 40px;
+}
+.twitter{
+    height:26px;
+    padding-right:10px;
+}
+.facebook-part{
+display: flex;
+padding-top:5px;
+padding-right: 40px;
+}
+
+.email-part{
+    display: flex;
+    padding-top:5px;
+    padding-right: 40px;
+}
+
+.phone-part{
+    display: flex;
+    padding-top:5px;
+    padding-right: 40px;
+}
+
+
+.facebook-part span{
+    padding-left: 10px;
+}
+.email{
+    margin-left: 10px;
+    height:15px;
+}
+.phone{
+    padding-left:28px ;
+
+}
+.designer{
+    padding-top:110px;
+    text-align: center;
+    font-size:smaller;
+}
+.border{
+    border-right: #f76c2f;
+}
+.facilities{
+    justify-content: center;
+    margin-left: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+
+}
