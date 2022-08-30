@@ -20,7 +20,9 @@ const Rooms
                         <a className="one">About Us</a>
                         <a className="one">Rooms</a>
                         <a className="one">Contacts</a>
+                        
                     </div>
+
                 </section>
 
                 <div className="sub-title"><h2>Rooms</h2>
