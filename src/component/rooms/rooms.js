@@ -3,7 +3,7 @@ import { Navigate, useHistory, Link } from 'react-router-dom';
 import family from '../images/Rooms/FamilyQuad.jpg'
 import single from '../images/Rooms/single.jpg'
 import presidential from '../images/Rooms/Presidential-Guest.jpg'
-import'../component/rooms.css'
+import'../rooms/rooms.css'
 import twitter from '../images/Rooms/twitter.png'
 import facebook from '../images/Rooms/facebook.png'
 import phone from '../images/Rooms/email.png'
