@@ -3,7 +3,7 @@ import { Navigate, useHistory, Link } from 'react-router-dom';
 import family from '../images/Rooms/FamilyQuad.jpg'
 import single from '../images/Rooms/single.jpg'
 import presidential from '../images/Rooms/Presidential-Guest.jpg'
-import'../rooms/rooms.css'
+import '../components/rooms.css'
 import twitter from '../images/Rooms/twitter.png'
 import facebook from '../images/Rooms/facebook.png'
 import phone from '../images/Rooms/email.png'
@@ -14,15 +14,13 @@ const Rooms
         return (
             <div className="container">
                 <section className="topPart">
-                    {/* <div className="title"><h1>Hopewell's Gardens</h1></div> */}
+                    <div className="title"><h1>Hopewell's Gardens</h1></div>
                     <div className='navigation'>
                         <a className="one">Home</a>
                         <a className="one">About Us</a>
                         <a className="one">Rooms</a>
                         <a className="one">Contacts</a>
-                        
                     </div>
-
                 </section>
 
                 <div className="sub-title"><h2>Rooms</h2>
