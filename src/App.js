@@ -1,18 +1,14 @@
 import React from 'react'
-import Rooms from './component/rooms/rooms.js';
-import Contact from './component/contact/Contact'
-import SignIn from './component/logSignIn/login.js';
-import SignUp from './component/logSignIn/signup.js';
+import Home from '../src/component/home/home'
+
 
 const App = () => {
   return (
     <div>
-      <h1>Hopewell's Garden</h1> 
-      <SignIn/>
-       <SignUp/>
-      <Rooms/>
+  
+      <Home/>
+    
       
-      <Contact/>
     </div>
   )
 }
