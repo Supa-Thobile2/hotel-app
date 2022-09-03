@@ -1,0 +1,77 @@
+import React from "react"
+import '../services/services.css'
+import image1 from '../images/Spa.jpg'
+import image2 from '../images/Tennis Court.jpg'
+import image3 from '../images/Gym.jpg'
+import image4 from '../images/Laundry.jpg'
+import image5 from '../images/Buffet.jpg'
+import image6 from '../images/Conference Room.jpg'
+
+function Services() {
+    return (
+        <div className="main-container">
+            <div className="top-part">
+                <h1 className="logo">Hopewell's Garden</h1>
+                <div className="menu-part">
+                    <a className="menu">Home</a>
+                    <a className="menu">About Us</a>
+                    <a className="menu">Rooms</a>
+                    <a className="menu">Reviews</a>
+                    <a className="menu">Services</a>
+                </div>
+            </div>
+
+            <div className="content">
+                <div >
+                    <h1>Services</h1>
+                    <p>Explore some of our awesome services at the Garden</p>
+                </div>
+
+                <div className="images">
+                    <div className="spa-div">
+                        <img src={image1} className="spa"></img>
+                        <h3>Spa</h3>
+                        <div className="underline"></div>
+                        <p className="service-info">At the Garden we understand that the best way to get away and relax is through a nice treat at a spa so as a guest you are entitled a free spa treat at one of our luxury massage center.</p>
+                    </div>
+                    <div className="spa-div">
+                        <img src={image2} className="tennis-court"></img>
+                        <h3>Tennis Court</h3>
+                        <div className="underline"></div>
+                        <p className="service-info">The Garden offers 4 state of the arts tennis courts which are available anytime of the day for our guests, also we offer two 5 aside soccer fields.  </p>
+                    </div>
+                    <div className="spa-div">
+                        <img src={image3} className="gym"></img>
+                        <h3>Gym</h3>
+                        <div className="underline"></div>
+                        <p className="service-info">One of our pride offering is our fitness center which comes with a personal trainer, 8 showers, a swimming pool and a beach view</p>
+                    </div>
+                </div>
+                <h1 className="other"><span>Other </span>Services</h1>
+                <div className="underline2" />
+                <div className="bottom-images">
+                    <div className="left-info">
+
+                        <li>Conference Room</li>
+                        <li>Free WI-FI</li>
+                        <li>Free Laundry Services</li>
+                        <li>Buffet</li>
+                    </div>
+                    <div className="right-info">
+                        <img src={image4} className="image"></img>
+                        <img src={image5} className="image"></img>
+                        <img src={image6} className="image"></img>
+                        <img src={image4} className="image"></img>
+                    </div>
+                </div>
+                <div className="footer">
+                    
+                </div>
+            </div>
+            
+
+        </div>
+    )
+}
+
+export default Services
