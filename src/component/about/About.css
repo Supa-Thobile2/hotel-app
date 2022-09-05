@@ -28,7 +28,7 @@
 .ImagePart{
     background: url(../images/hotel1.jpg);
     background-size: cover;
-    height: 260px;
+    height: 220px;
     padding-top: 80px;
     background-position: center;
     margin-top: 20px;
@@ -44,7 +44,7 @@
     font-size: 2em;
     text-align: center;
     margin-top: 40px;
-
+  
 }
 .underline{
     height: 04px;

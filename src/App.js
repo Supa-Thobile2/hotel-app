@@ -1,23 +1,35 @@
 import React from 'react'
-// import Home from '../src/component/home/home'
+import { BrowserRouter as Router, Routes , Route} from 'react-router-dom';
+import Home from '../src/component/home/home'
  import LeftSection from '../src/component/admin/leftSection'
 //  import MiddleSection from '../src/component/admin/middleSection'
 //  import RightSection from '../src/component/admin/rightSection'
+import About from './component/about/About'
+// import Book from './component/booking/Booking'
+import Contact from './component/contact/Contact'
+import Rooms from './component/rooms/rooms'
+import Services from './component/services/services'
 
-
-const App = () => {
+function App () {
   return (
-    <div style={{display: 'flex', padding: '200px', margin: '200px'}}>
+    <div>
   
-      <Home/>
-{/* 
-      <LeftSection/>
-      {/* <MiddleSection/>
-      <RightSection/> */} */}
+      
+      <Router>
+      <Routes>
+        <Route exact path='/' element= {<Home/>}/>
+        <Route path="/About" element={<About/>} />
+
+        <Route path="/Contacts" element={<Contact/>} />
+        <Route path="/Rooms" element={<Rooms/>} />
+        <Route path="/Services" element={<Services/>} />
+      </Routes>
+    
+     </Router>
     
       
     </div>
-  )
+  );
 }
 
 export default App
