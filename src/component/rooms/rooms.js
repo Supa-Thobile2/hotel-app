@@ -6,9 +6,9 @@ import presidential from '../images/Rooms/Presidential-Guest.jpg'
 import '../rooms/rooms.css'
 import twitter from '../images/Rooms/twitter.png'
 import facebook from '../images/Rooms/facebook.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faEnvelope} from "@fortawesome/free-solid-svg-icons"
-import {faPhone} from "@fortawesome/free-solid-svg-icons"
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import {faEnvelope} from "@fortawesome/free-solid-svg-icons"
+// import {faPhone} from "@fortawesome/free-solid-svg-icons"
 
 
 
@@ -93,8 +93,8 @@ const Rooms = () => {
                 <div className="border"></div>
                   <div className="twitter-part"><img src={twitter} className="twitter" />Twitter : @Hopewell_s_Garden</div>
                   <div className="facebook-part"><img src={facebook} className="twitter" />facebook : Hopewell's Garden</div>
-                  <div className="facebook-part"><FontAwesomeIcon icon={faEnvelope} className="email" /><span>Email-Address : Hopewell's Garden</span></div>
-                  <div className="facebook-part"><FontAwesomeIcon icon={faPhone} className="phone" /><span>Phone :0672722080 / 0656683604</span></div>
+                {/* <div className="facebook-part"><FontAwesomeIcon icon={faEnvelope} className="email" /><span>Email-Address : Hopewell's Garden</span></div>
+                <div className="facebook-part"><FontAwesomeIcon icon={faPhone} className="phone" /><span>Phone :0672722080 / 0656683604</span></div> */}
                 </div>
 
             </div>
