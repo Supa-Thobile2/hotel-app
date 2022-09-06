@@ -3,9 +3,11 @@ import { Navigate, useHistory, Link } from 'react-router-dom';
 import family from '../images/Rooms/FamilyQuad.jpg'
 import single from '../images/Rooms/single.jpg'
 import presidential from '../images/Rooms/Presidential-Guest.jpg'
-import '../rooms/rooms.css'
+import '../css/rooms.css'
 import twitter from '../images/Rooms/twitter.png'
 import facebook from '../images/Rooms/facebook.png'
+
+import Slideshow from '../slideshow/slideshow'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import {faEnvelope} from "@fortawesome/free-solid-svg-icons"
 // import {faPhone} from "@fortawesome/free-solid-svg-icons"
@@ -25,7 +27,7 @@ const Rooms = () => {
                 </div>
             </div>
             <section className='content1'>
-                
+                {/* <Slideshow /> */}
             </section>
             <div className='col-md-12 text-center'>
                 <h3 className='main-heading'>Rooms</h3>
@@ -34,7 +36,8 @@ const Rooms = () => {
             
         
             <div className='mid-div'>
-                <p className='info'>You've found the ideal spot if you're looking for useful and inexpensive hotel lodging in Durban.<br></br>
+                <p className='info'>
+                    You've found the ideal spot if you're looking for useful and inexpensive hotel lodging in Durban.<br></br>
                     The Hopewell's Gardens provides guests with contemporary, practical, and comfortable lodging at a great bargain.<br></br>
                     We provide our customers with the ideal amenities to accompany a business, stopover, or short stay vacation in each of our modestly sized rooms.<br></br>
                     Our accommodations have been specifically created so that we can host both business and leisure guests, including singles, couples, and families.<br></br>
@@ -49,7 +52,8 @@ const Rooms = () => {
                     <img src={family} alt="" />
                     <div id='price1'>FamilyQuad<span>R1200.00</span></div>
                     <h3>Family Quad</h3>
-                    <p id='rooms-info'>There is no better place to hunt for the ideal short-term lodging for your family.
+                    <p id='rooms-info'>
+                       There is no better place to hunt for the ideal short-term lodging for your family.
                        Compared to our other hotel rooms, our family hotel rooms are a little bit larger.
                        ese accommodations, which sleep up to four people, have a double bed and a full-size bunk bed.
                     </p>
@@ -76,7 +80,8 @@ const Rooms = () => {
 
             <div className='rooms-specs'>
                 <h3>Facilites in our rooms are:</h3>
-                <div className='facilites'>
+                <div className='facilities'>
+                    <ul>
                     <li>Air Conditioning</li>
                     <li>En-suite bathroom</li>
                     <li>Small flat screen TV with FREE NETFLIX</li>
@@ -85,6 +90,7 @@ const Rooms = () => {
                     <li>Landline telephone</li>
                     <li>Electronic safe</li>
                     <li>Free Wi-Fi</li>
+                    </ul>
                 </div>
             </div>
 

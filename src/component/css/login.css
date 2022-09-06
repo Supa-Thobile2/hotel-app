@@ -19,7 +19,7 @@
     height: 500px;
     color: white;
     padding-top: 40px;
-    background-color: rgba(0,0,0,.2)
+    background-color: rgba(0,0,0,.2);
 }
 .main-container h1{
     color: #f76c2f;
@@ -39,20 +39,28 @@
     padding-left: 20px;
     cursor: pointer;
 }
+
+.main-container a:hover{
+    color: white;
+}
+
 .link{
     padding-top: 40px;
 }
 
-button{
+#lgnButton{
     cursor: pointer;
     border-radius: 10px;
     border: none;
-    background-color: #f76c2f;
-    cursor: pointer;
+    background-color: rgb(223, 221, 221);
+    height: 5vh;
 }
-button:hover{
-    border-bottom: 4px solid grey;
+
+#lgnButton:hover{
+    color: #f76c2f;
+    
 }
+
 
 
 

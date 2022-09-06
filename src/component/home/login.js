@@ -1,10 +1,11 @@
 
 import React,{useState} from "react";
-import {Link} from 'react-router-dom'
-import {useNavigate} from 'react-router-dom'
-import {auth} from '../config/firebase'
-import {signInWithEmailAndPassword} from 'firebase/auth';
+// import {Link} from 'react-router-dom'
+// import {useNavigate} from 'react-router-dom'
+// import {auth} from '../config/firebase'
+// import {signInWithEmailAndPassword} from 'firebase/auth';
 
+import '../css/login.css'
 
 function SignIn(){
 
@@ -13,47 +14,55 @@ function SignIn(){
 
     const btn = {
         marginTop:'3px',
-         background:"orange",
+         background:" #f76c2f",
          borderradius:"3px solid orange",
          height:"30px",
          width:"100px",
+         height:'5vh'
      }
  
-     let history= useNavigate ();
+    //  let history= useNavigate ();
  
-     const login =(() => {
-        signInWithEmailAndPassword(auth,email,Password).then (() => {
-             history("/home");
-         }).catch ((error) => {
-             console.log(error);
-         })
+    //  const login =(() => {
+    //     signInWithEmailAndPassword(auth,email,Password).then (() => {
+    //          history("/home");
+    //      }).catch ((error) => {
+    //          console.log(error);
+    //      })
  
-     });
+    //  });
     return(
-        <div>
-            
-            <form>
-            <h1>LOGIN</h1>
-                <input text="emmail" placeholder="enter email" onChange={(e) => setEmail(e.target.value)}/>
-                <br></br>
-                <br></br>
-                <input text="password" placeholder="enter your password" onChange={(e) => setPassword(e.target.value)}/>
-                <br></br>
-                <br></br>
-                <span>Don't Have Account</span>{""}
-                <span>
-                    <Link to="/signup">Create Account</Link>
-                </span>
-                <br></br>
-                <span>Forget Password</span>{""}
-                <span>
-                    <Link to="/forgetpassword">Create Password</Link>
-                </span>
-                <br></br>
-                <br></br>
-                <button style={btn} onClick={login}>LogIn</button>
+        <div className="main-container">
 
-            </form>
+            <div id="main-form">
+                
+                    <h1>LOGIN</h1>
+                    <div id="input-fields">
+                        <input text="emmail" placeholder="enter email" onChange={(e) => setEmail(e.target.value)}/>
+                        
+                        <input text="password" placeholder="enter your password" onChange={(e) => setPassword(e.target.value)}/>
+                        <div className="link">
+                            <span>Don't Have Account</span>{""}
+                            <span>
+                                <a to="/signup">Create Account</a>
+                            </span>
+                            <br></br>
+                            
+                            <span>Forgot Password</span>{""}
+                            <span>
+                                <a to="/forgetpassword">Reset Password</a>
+                            </span>
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            <button id='lgnButton'>LogIn</button>
+                        </div>
+                
+                    </div>
+                
+            </div>
+            
+            
         </div>
     )
 }
