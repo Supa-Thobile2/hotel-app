@@ -1,5 +1,6 @@
 import React from "react"
-import '../css/services.css'
+import '../services/services.css'
+import {Link} from 'react-router-dom'
 import image1 from '../images/Spa.jpg'
 import image2 from '../images/Tennis Court.jpg'
 import image3 from '../images/Gym.jpg'
@@ -19,11 +20,13 @@ function Services() {
             <div className="top-part">
                 <h1 className="logo">Hopewell's Garden</h1>
                 <div className="menu-part">
-                    <a className="menu">Home</a>
-                    <a className="menu">About Us</a>
-                    <a className="menu">Rooms</a>
-                    <a className="menu">Reviews</a>
-                    <a className="menu">Services</a>
+                    
+                    <a className="menu"><Link to="/">Home</Link></a>
+                    <a className="menu"><Link to="/About">About Us</Link></a>
+                    <a className="menu"><Link to="/Rooms">Rooms</Link></a>
+                    <a className="menu"><Link to="/Contacts">Reviews</Link></a>
+                    <a className="menu"><Link to="/Services">Services</Link></a>
+                    
                 </div>
             </div>
 

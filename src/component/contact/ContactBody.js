@@ -4,7 +4,7 @@ function ContactBody(){
     return(
         <div>
 
-                    <div style={{display: 'flex', justifyContent: 'space-around', padding:'20px'}}>
+                    <div style={{display: 'column-reverse', justifyContent: 'space-around', padding:'20px'}}>
                                     {/* <div>
                                         <p>What we offer</p>
 

@@ -1,10 +1,12 @@
 import React from "react";
 import '../css/About.css'
+import {Link} from 'react-router-dom'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import {faEnvelope} from "@fortawesome/free-solid-svg-icons"
 // import {faPhone} from "@fortawesome/free-solid-svg-icons"
 import twitter from '../images/twitter.png'
 import facebook from '../images/facebook.png'
+
 
 function About() {
   return (
@@ -12,10 +14,11 @@ function About() {
           <section className="top-part">
               <h1 className="logo">Hopewell's Garden</h1>
               <div className='menu-part'>
-                <a className="menu">Home</a>
-                <a className="menu">About Us</a>
-                <a className="menu">Rooms</a>
-                <a className="menu">Contacts</a>
+              <a className="menu"><Link to="/">Home</Link></a>
+                    <a className="menu"><Link to="/About">About Us</Link></a>
+                    <a className="menu"><Link to="/Rooms">Rooms</Link></a>
+                    <a className="menu"><Link to="/Contacts">Reviews</Link></a>
+                    <a className="menu"><Link to="/Services">Services</Link></a>
               </div>
           </section>
 
