@@ -12,17 +12,23 @@ function ContactBody(props){
 
  
 
-  const Add = (()=>{
+  const Add = ((e)=>{
+    e.preventDefault();
 
     console.log(Email)
     console.log(FullName)
     console.log(ContactNumber)
     console.log(message)
+    
+
     props.AddReview(Email, FullName, ContactNumber, message)
+
+  
+    
   })
     
 
-    
+//   console.log(props);
 
     return(
         <div>
@@ -42,6 +48,7 @@ function ContactBody(props){
                                         <h4>Fax:</h4>
                                         <h4>Queries:</h4>
                                         <p>Social Media Links</p>
+                                        
                                     </div>
                                     <div>
                                         <form>

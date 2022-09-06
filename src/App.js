@@ -17,16 +17,16 @@ function App () {
 // const [review, setReview] = useState([]);//defining a use state 
 const [review, setReview] = useState([])
 
-const AddReview = ((email, FullName, ContactNumber, message)=>{
+const AddReview = ((Email, FullName, ContactNumber, message)=>{
 
-  setReview((email)=>[...email,{
-      email:email,
+  setReview((items)=>[...items,{
+      Email:Email,
       FullName:FullName,
       ContactNumber:ContactNumber,
       message:message
   }])
 
-  // console.log(review)
+  console.log(review)
 })
 
 //addReview function
@@ -41,7 +41,7 @@ const AddReview = ((email, FullName, ContactNumber, message)=>{
         <Route exact path='/' element= {<Home/>}/>
         <Route path="/About" element={<About/>} />
 
-        <Route path="/Contacts" element={ <Contact AddReview={AddReview}/>}  />
+        <Route path="/Contacts" element={ <Contact addReview={AddReview}/>}  />
         <Route path="/Rooms" element={<Rooms/>} />
         <Route path="/Services" element={<Services/>} />
       </Routes>
