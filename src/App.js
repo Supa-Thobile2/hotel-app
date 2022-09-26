@@ -14,14 +14,16 @@ import Contact from './component/contact/Contact'
 // import ForgotPassword from './component/verification/forgotPassword';
 // import Book from './component/booking/book'
 import {useState, useEffect} from 'react'
-import {collection, getDoc} from 'firebase/firestore'
+// import {collection, getDoc} from 'firebase/firestore'
 
 function App () {
 
 
   //Review function
 const [review, setReview] = useState([])
+useEffect(()=>{
 
+})
 
 const AddReview = ((Email, FullName, ContactNumber, message)=>{
 
@@ -35,9 +37,9 @@ const AddReview = ((Email, FullName, ContactNumber, message)=>{
  
 })
 
-// useEffect(()=>{
-//   console.log(review)
-// });
+useEffect(()=>{
+  console.log(review)
+});
 
 
 
@@ -119,7 +121,7 @@ const AddReview = ((Email, FullName, ContactNumber, message)=>{
 
      {/* <Book book={addBooking}/> */}
 
-     <Contact review={AddReview}/>
+     <Contact addReview={AddReview}/>
 
 
 

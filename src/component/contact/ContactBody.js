@@ -1,5 +1,5 @@
 import '../css/Contact.css'
-import {useState} from 'react'
+import React, {useState} from 'react'
 
 function ContactBody(props){
 
@@ -21,7 +21,7 @@ function ContactBody(props){
     console.log(message)
     
 
-    props.AddReview(Email, FullName, ContactNumber, message)
+    props.addReview(Email, FullName, ContactNumber, message)
 
   
     
